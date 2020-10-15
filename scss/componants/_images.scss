@@ -1,0 +1,10 @@
+.overlay-logo,
+.logo {
+    // background-color: rgba(250, 234, 214, .7);
+    // border-radius: 80px;
+    width: 60%;
+
+    @include medq($break-m) {
+        max-width: 350px;
+    }
+}

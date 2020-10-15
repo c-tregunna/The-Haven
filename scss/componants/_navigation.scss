@@ -1,0 +1,62 @@
+
+.show-list {
+	width: 100px;
+	text-align: center;
+	padding: 6px;
+	border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid $button-border;
+}
+
+.box {
+	width: 40%;
+	position: relative;
+	padding: 10px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 16px;
+	height: 160px;
+}
+
+/* CSS code stagger show the list items - if I can figure it out...*/
+
+.list {
+	background: antiquewhite;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	z-index: 100;
+	position: fixed;
+	top: 74px;
+	height: 0;
+	overflow: hidden;
+	transition: .6s;
+}
+
+.list li {
+	background: inherit;
+	list-style-type: none;
+	margin: 3px;
+	padding: 4px;
+	width: 80%;
+    text-align: center;
+    border-bottom: 1px solid lighten($black, 50%);
+}
+
+.second {
+	transition-delay: .2s;
+}
+
+.third {
+	transition-delay: .4s;
+}
+
+.hidden {
+    height: 110px;
+}
