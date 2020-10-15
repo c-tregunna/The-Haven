@@ -67,3 +67,26 @@
 .hidden {
     height: 110px;
 }
+
+.tablet-nav {
+	display: none;
+	@include medq($break-m) {
+		width: 70%;
+		margin: auto;
+		padding: 10px 0;
+		@include flex($dir: row, $align: center, $just: center);
+	}
+	& li {
+		width: 60px;
+		text-align: center;
+		padding: 0 24px;
+		border-right: 1px solid black;
+		&:last-child {
+			border-right: none;
+		}
+		&:hover {
+			color: red;
+		}
+	}
+
+}

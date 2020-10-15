@@ -528,6 +528,33 @@ h1 {
   height: 110px;
 }
 
+.tablet-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablet-nav {
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tablet-nav li {
+  width: 60px;
+  text-align: center;
+  padding: 0 24px;
+  border-right: 1px solid black;
+}
+.tablet-nav li:last-child {
+  border-right: none;
+}
+.tablet-nav li:hover {
+  color: red;
+}
+
 .overlay-logo,
 .logo {
   max-width: 200px;
