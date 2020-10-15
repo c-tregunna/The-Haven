@@ -413,6 +413,12 @@ body {
   font-size: 1em;
   font-family: "Poppins", sans-serif;
   background: #faebd7;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
@@ -422,8 +428,11 @@ header {
   align-items: center;
   height: 220px;
   width: 100%;
-  background-size: cover;
-  filter: sepia(1) grayscale(0.4);
+  position: relative;
+}
+
+main {
+  height: 600px;
 }
 
 h1 {
@@ -450,12 +459,21 @@ h1 {
 }
 
 .show-list {
-  width: 100px;
+  width: 60px;
+  height: 60px;
   text-align: center;
   padding: 6px;
-  border-radius: 6px;
+  border-radius: 50%;
   cursor: pointer;
   border: 1px solid #8a8a8a;
+  position: fixed;
+  z-index: 10000;
+  background-color: #faebd7;
+}
+@media (min-width: 768px) {
+  .show-list {
+    display: none;
+  }
 }
 
 .box {
@@ -474,7 +492,7 @@ h1 {
 /* CSS code stagger show the list items - if I can figure it out...*/
 .list {
   background: antiquewhite;
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -482,7 +500,7 @@ h1 {
   border-radius: 6px;
   z-index: 100;
   position: fixed;
-  top: 74px;
+  top: 60px;
   height: 0;
   overflow: hidden;
   transition: 0.6s;
@@ -512,7 +530,7 @@ h1 {
 
 .overlay-logo,
 .logo {
-  width: 60%;
+  max-width: 200px;
 }
 @media (min-width: 768px) {
   .overlay-logo,

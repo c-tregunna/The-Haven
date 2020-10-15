@@ -1,11 +1,18 @@
 
 .show-list {
-	width: 100px;
+	width: 60px;
+	height: 60px;
 	text-align: center;
 	padding: 6px;
-	border-radius: 6px;
+	border-radius: 50%;
     cursor: pointer;
-    border: 1px solid $button-border;
+	border: 1px solid $button-border;
+	position: fixed;
+	z-index: 10000;
+	background-color: $background;
+	@include medq($break-m) {
+		display: none;
+	}
 }
 
 .box {
@@ -25,7 +32,7 @@
 
 .list {
 	background: antiquewhite;
-	width: 40%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -33,7 +40,7 @@
 	border-radius: 6px;
 	z-index: 100;
 	position: fixed;
-	top: 74px;
+	top: 60px;
 	height: 0;
 	overflow: hidden;
 	transition: .6s;

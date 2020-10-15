@@ -2,12 +2,21 @@ body {
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     background: $background;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
     @include flex($dir: column, $just: center, $align: center);
     height: 220px;
     width: 100%;
-    background-size: cover;
-    filter: sepia(1) grayscale(.40);
+    position: relative;
+}
+
+main {
+    height: 600px;
 }
