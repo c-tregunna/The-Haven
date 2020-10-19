@@ -12,9 +12,11 @@
 	background-color: $background;
 	top: 10px;
 	left: 10px;
+	outline: none;
 	@include medq($break-m) {
 		display: none;
 	}
+
 }
 
 .box {
@@ -90,7 +92,8 @@
 			border-right: none;
 		}
 		&:hover {
-			color: red;
+			text-decoration: underline;
+			// Not happy with this as yet
 		}
 	}
 

@@ -7,11 +7,13 @@ const list = document.querySelector('.list');
 //------- Hide enter overlay ------\\
 enterBtn.addEventListener('click', () => {
     overlay.classList.add('hidden');
+    setTimeout(() => { // will slow down the hiding of the logo and button on home page
     enterBtn.style.display = 'none';
     overlayLogo.style.display = 'none';
+    }, 900);
 });
 
 //------- Mobile navigation drop down ------\\
 heading.addEventListener('click', () => {
-	list.classList.toggle('hidden')
+    list.classList.toggle('hidden');
 });

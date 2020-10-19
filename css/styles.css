@@ -417,7 +417,6 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -426,7 +425,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 220px;
+  height: 180px;
   width: 100%;
   position: relative;
 }
@@ -471,6 +470,7 @@ h1 {
   background-color: #faebd7;
   top: 10px;
   left: 10px;
+  outline: none;
 }
 @media (min-width: 768px) {
   .show-list {
@@ -559,7 +559,7 @@ h1 {
   border-right: none;
 }
 .tablet-nav li:hover {
-  color: red;
+  text-decoration: underline;
 }
 
 .overlay-logo,
@@ -589,11 +589,13 @@ button.enter:active {
 }
 
 .parallax {
-  background: url("../images/hair-modal.png") no-repeat center;
+  background: url("../images/hair-cut.png") no-repeat center;
   min-height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
+  margin-top: 0px;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=styles.css.map */
