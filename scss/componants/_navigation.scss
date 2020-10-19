@@ -10,6 +10,8 @@
 	position: fixed;
 	z-index: 10000;
 	background-color: $background;
+	top: 10px;
+	left: 10px;
 	@include medq($break-m) {
 		display: none;
 	}
@@ -44,6 +46,9 @@
 	height: 0;
 	overflow: hidden;
 	transition: .6s;
+	@include medq($break-m) {
+		display: none;
+	}
 }
 
 .list li {

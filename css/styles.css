@@ -469,6 +469,8 @@ h1 {
   position: fixed;
   z-index: 10000;
   background-color: #faebd7;
+  top: 10px;
+  left: 10px;
 }
 @media (min-width: 768px) {
   .show-list {
@@ -504,6 +506,11 @@ h1 {
   height: 0;
   overflow: hidden;
   transition: 0.6s;
+}
+@media (min-width: 768px) {
+  .list {
+    display: none;
+  }
 }
 
 .list li {
