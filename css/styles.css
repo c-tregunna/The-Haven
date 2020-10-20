@@ -409,6 +409,10 @@ ul {
   list-style: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 1em;
   font-family: "Poppins", sans-serif;
@@ -417,6 +421,7 @@ body {
 }
 
 .container {
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -428,10 +433,19 @@ header {
   height: 180px;
   width: 100%;
   position: relative;
+  padding-top: 90px;
+  margin-bottom: 60px;
 }
 
 main {
   height: 600px;
+}
+
+section {
+  width: 100%;
+  margin: 20px 0px;
+  border: 1px solid;
+  height: 400px;
 }
 
 h1 {
@@ -502,7 +516,7 @@ h1 {
   border-radius: 6px;
   z-index: 100;
   position: fixed;
-  top: 60px;
+  top: 42px;
   height: 0;
   overflow: hidden;
   transition: 0.6s;
@@ -540,9 +554,10 @@ h1 {
 }
 @media (min-width: 768px) {
   .tablet-nav {
-    width: 70%;
+    width: 100%;
     margin: auto;
     padding: 10px 0;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -550,7 +565,7 @@ h1 {
   }
 }
 .tablet-nav li {
-  width: 60px;
+  width: 200px;
   text-align: center;
   padding: 0 24px;
   border-right: 1px solid black;
@@ -560,6 +575,12 @@ h1 {
 }
 .tablet-nav li:hover {
   text-decoration: underline;
+}
+
+.scroll {
+  background-color: #faebd6;
+  box-shadow: 0px 1px 6px #aeaeae;
+  z-index: 1000;
 }
 
 .overlay-logo,
