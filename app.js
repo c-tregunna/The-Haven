@@ -14,9 +14,9 @@ enterBtn.addEventListener('click', () => {
 });
 
 //------- Mobile navigation drop down ------\\
-heading.addEventListener('click', () => {
-    list.classList.toggle('hidden');
-});
+// heading.addEventListener('click', () => {
+//     list.classList.toggle('hidden');
+// });
 
 window.onscroll = () => {
     const nav = document.querySelector('#navbar');

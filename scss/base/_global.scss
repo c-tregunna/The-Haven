@@ -1,35 +1,46 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
-    background: $background;
-    position: relative;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  // background-image: url("../images/background.png");
+  // background-size: cover;
+  background: $background;
+  position: relative;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
-    @include flex($dir: column, $just: center, $align: center);
-    height: 180px;
-    width: 100%;
-    position: relative;
-    padding-top: 90px;
-    margin-bottom: 60px;
+  @include flex($dir: column, $just: center, $align: center);
+  height: 240px;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 60px;
 }
 
 main {
-    height: 600px;
+  height: 600px;
 }
 
 section {
-    width: 100%;
-    margin: 20px 0px;
-    border: 1px solid;
-    height: 400px;
+  width: 90%;
+  margin: 10px auto;
+  height: 400px;
+  position: relative;
+  @include flex($just: center, $align: center);
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }

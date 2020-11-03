@@ -430,10 +430,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 180px;
+  height: 240px;
   width: 100%;
   position: relative;
-  padding-top: 90px;
+  padding-top: 100px;
   margin-bottom: 60px;
 }
 
@@ -442,15 +442,30 @@ main {
 }
 
 section {
-  width: 100%;
-  margin: 20px 0px;
-  border: 1px solid;
+  width: 90%;
+  margin: 10px auto;
   height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- Float clearfix ---- */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 h1 {
   text-transform: uppercase;
   margin: 0;
+}
+
+h4 {
+  font-size: 3em;
+  -webkit-text-stroke: 1px white;
 }
 
 .enter-overlay {
@@ -471,104 +486,38 @@ h1 {
   height: 0vh;
 }
 
-.show-list {
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  padding: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 1px solid #8a8a8a;
-  position: fixed;
-  z-index: 10000;
-  background-color: #faebd7;
-  top: 10px;
-  left: 10px;
-  outline: none;
-}
-@media (min-width: 768px) {
-  .show-list {
-    display: none;
-  }
-}
-
-.box {
-  width: 40%;
-  position: relative;
-  padding: 10px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 16px;
-  height: 160px;
-}
-
 /* CSS code stagger show the list items - if I can figure it out...*/
-.list {
-  background: antiquewhite;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  z-index: 100;
-  position: fixed;
-  top: 42px;
-  height: 0;
-  overflow: hidden;
-  transition: 0.6s;
-}
-@media (min-width: 768px) {
-  .list {
-    display: none;
-  }
-}
-
-.list li {
-  background: inherit;
-  list-style-type: none;
-  margin: 3px;
-  padding: 4px;
-  width: 80%;
-  text-align: center;
-  border-bottom: 1px solid gray;
-}
-
-.second {
-  transition-delay: 0.2s;
-}
-
-.third {
-  transition-delay: 0.4s;
-}
-
 .hidden {
   height: 110px;
 }
 
 .tablet-nav {
-  display: none;
-}
-@media (min-width: 768px) {
-  .tablet-nav {
-    width: 100%;
-    margin: auto;
-    padding: 10px 0;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .tablet-nav li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
   width: 200px;
   text-align: center;
-  padding: 0 24px;
+  padding: 0 6px;
+  height: 40px;
   border-right: 1px solid black;
+  transition: text-decoration 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .tablet-nav li {
+    font-size: 1.25em;
+  }
 }
 .tablet-nav li:last-child {
   border-right: none;
@@ -579,7 +528,7 @@ h1 {
 
 .scroll {
   background-color: #faebd6;
-  box-shadow: 0px 1px 6px #aeaeae;
+  box-shadow: 0px 1px 6px #f4d5a9;
   z-index: 1000;
 }
 
@@ -592,6 +541,15 @@ h1 {
 .logo {
     max-width: 350px;
   }
+}
+
+.image {
+  background: url("../images/hair-cut.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 button.enter {
