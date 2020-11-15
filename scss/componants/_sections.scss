@@ -1,13 +1,27 @@
 .section_outer {
-  height: 400px;
+  height: 240px;
   width: 100%;
   margin: auto;
+  @include medq($break-m) {
+    height: 320px;
+  }
+  @include medqL($break-l) {
+    height: 500px;
+  }
 }
 
 .section_container {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   transform: rotate(45deg);
+  @include medq($break-m) {
+    width: 220px;
+    height: 220px;
+  }
+  @include medqL($break-l) {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 .section_container span {
@@ -45,4 +59,5 @@
   background: tomato;
   transform: rotate(-45deg);
   background-color: $purple;
+  @include flex($just: center, $align: center);
 }

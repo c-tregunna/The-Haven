@@ -433,8 +433,6 @@ header {
   height: 240px;
   width: 100%;
   position: relative;
-  padding-top: 100px;
-  margin-bottom: 60px;
 }
 
 main {
@@ -444,12 +442,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@media (min-width: 768px) {
-  main {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 section {
@@ -472,8 +464,10 @@ h1 {
 }
 
 h4 {
-  font-size: 3em;
-  -webkit-text-stroke: 1px white;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
 }
 
 .enter-overlay {
@@ -504,7 +498,7 @@ h4 {
 }
 
 .tablet-nav {
-  width: calc(100% - 40px);
+  width: 100%;
   top: 0;
   left: 0;
   margin: auto;
@@ -582,15 +576,37 @@ button.enter:active {
 }
 
 .section_outer {
-  height: 400px;
+  height: 240px;
   width: 100%;
   margin: auto;
 }
+@media (min-width: 768px) {
+  .section_outer {
+    height: 320px;
+  }
+}
+@media (min-width: 1024px) {
+  .section_outer {
+    height: 500px;
+  }
+}
 
 .section_container {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   transform: rotate(45deg);
+}
+@media (min-width: 768px) {
+  .section_container {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (min-width: 1024px) {
+  .section_container {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 .section_container span {
@@ -628,6 +644,9 @@ button.enter:active {
   background: tomato;
   transform: rotate(-45deg);
   background-color: #4d3f5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

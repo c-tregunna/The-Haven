@@ -21,17 +21,15 @@ header {
   height: 240px;
   width: 100%;
   position: relative;
-  padding-top: 100px;
-  margin-bottom: 60px;
 }
 
 main {
   width: 100%;
   padding-top: 10px;
   @include flex($dir: column, $just: center, $align: center);
-  @include medq($break-m) {
-    @include flex($dir: row);
-  }
+  // @include medq($break-m) {
+  //   @include flex($dir: row);
+  // }
 }
 
 section {
