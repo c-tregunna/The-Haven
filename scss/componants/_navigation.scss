@@ -3,7 +3,8 @@
 }
 .main-nav {
   position: relative;
-  height: 80px;
+  padding: 6px;
+  height: 60px;
   @include medq($break-m) {
     display: none;
   }

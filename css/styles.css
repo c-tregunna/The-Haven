@@ -430,7 +430,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 240px;
+  height: 200px;
   width: 100%;
   position: relative;
 }
@@ -457,6 +457,14 @@ section {
   align-items: center;
 }
 
+footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ---- Float clearfix ---- */
 .clearfix::after {
   content: " ";
@@ -474,6 +482,11 @@ h4 {
   color: #fff;
   font-weight: 400;
   text-align: center;
+}
+
+.fab {
+  font-size: 2em;
+  color: #4d3f5c;
 }
 
 .enter-overlay {
@@ -500,7 +513,8 @@ h4 {
 
 .main-nav {
   position: relative;
-  height: 80px;
+  padding: 6px;
+  height: 60px;
 }
 @media (min-width: 768px) {
   .main-nav {
@@ -547,7 +561,7 @@ h4 {
 
 .overlay-logo,
 .logo {
-  max-width: 200px;
+  max-width: 250px;
 }
 @media (min-width: 768px) {
   .overlay-logo,

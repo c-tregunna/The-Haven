@@ -18,7 +18,7 @@ body {
 
 header {
   @include flex($dir: column, $just: center, $align: center);
-  height: 240px;
+  height: 200px;
   width: 100%;
   position: relative;
 }
@@ -37,6 +37,10 @@ section {
   @include flex($just: center, $align: center);
 }
 
+footer {
+  margin-top: 40px;
+  @include flex($dir: column, $just: center, $align: center);
+}
 /* ---- Float clearfix ---- */
 
 .clearfix::after {

@@ -13,6 +13,11 @@ enterBtn.addEventListener('click', () => {
     }, 900);
 });
 
+let today = new Date();
+let year = today.getFullYear();
+let currentYear = document.querySelector('#date');
+currentYear.innerHTML = year;
+
 //------- Mobile navigation drop down ------\\
 // heading.addEventListener('click', () => {
 //     list.classList.toggle('hidden');
