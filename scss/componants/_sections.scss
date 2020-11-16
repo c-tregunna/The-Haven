@@ -3,11 +3,11 @@
   width: 100%;
   margin: auto;
   @include medq($break-m) {
-    height: 320px;
+    height: 300px;
   }
-  @include medqL($break-l) {
-    height: 500px;
-  }
+  // @include medqL($break-l) {
+  //   height: 500px;
+  // }
 }
 
 .section_container {
@@ -15,13 +15,13 @@
   height: 150px;
   transform: rotate(45deg);
   @include medq($break-m) {
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
   }
-  @include medqL($break-l) {
-    width: 320px;
-    height: 320px;
-  }
+  // @include medqL($break-l) {
+  //   width: 320px;
+  //   height: 320px;
+  // }
 }
 
 .section_container span {
