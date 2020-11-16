@@ -418,6 +418,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   background: #e6e7e9;
   position: relative;
+  color: #4d3f5c;
 }
 
 .container {
@@ -430,14 +431,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 160px;
   width: 100%;
   position: relative;
+}
+@media (min-width: 768px) {
+  header {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 main {
   width: 100%;
-  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -458,11 +464,16 @@ section {
 }
 
 footer {
-  margin-top: 40px;
+  width: 80%;
+  margin: 10px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top: 2px solid #768563;
+}
+footer p {
+  text-align: center;
 }
 
 /* ---- Float clearfix ---- */
@@ -478,10 +489,15 @@ h1 {
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.25em;
   color: #fff;
   font-weight: 400;
   text-align: center;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 2em;
+  }
 }
 
 .fab {
@@ -561,7 +577,7 @@ h4 {
 
 .overlay-logo,
 .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 @media (min-width: 768px) {
   .overlay-logo,
@@ -595,7 +611,7 @@ button.enter:active {
 }
 
 .section_outer {
-  height: 240px;
+  height: 160px;
   width: 100%;
   margin: auto;
 }
@@ -606,8 +622,8 @@ button.enter:active {
 }
 
 .section_container {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   transform: rotate(45deg);
 }
 @media (min-width: 768px) {
@@ -621,7 +637,7 @@ button.enter:active {
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: #806998;
+  background-color: #768563;
 }
 
 .section_container span:first-child {
@@ -655,6 +671,11 @@ button.enter:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 1px 9px #61666f;
+  transition: background-color 0.5s ease-in-out;
+}
+.section_container .section_content:hover {
+  background-color: #768563;
 }
 
 /*# sourceMappingURL=styles.css.map */

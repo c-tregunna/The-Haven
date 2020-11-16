@@ -4,10 +4,13 @@ h1 {
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.25em;
   color: $white;
   font-weight: 400;
   text-align: center;
+  @include medq($break-m) {
+    font-size: 2em;
+  }
 }
 
 .fab {

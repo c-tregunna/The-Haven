@@ -9,6 +9,7 @@ body {
   // background-size: cover;
   background: $background;
   position: relative;
+  color: $purple;
 }
 
 .container {
@@ -18,14 +19,17 @@ body {
 
 header {
   @include flex($dir: column, $just: center, $align: center);
-  height: 200px;
+  height: 160px;
   width: 100%;
   position: relative;
+  @include medq($break-m) {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 main {
   width: 100%;
-  padding-top: 10px;
   @include flex($dir: column, $just: center, $align: center);
   @include medq($break-m) {
     @include flex($dir: row);
@@ -38,8 +42,13 @@ section {
 }
 
 footer {
-  margin-top: 40px;
+  width: 80%;
+  margin: 10px auto 0;
   @include flex($dir: column, $just: center, $align: center);
+  border-top: 2px solid #768563;
+  & p {
+    text-align: center;
+  }
 }
 /* ---- Float clearfix ---- */
 

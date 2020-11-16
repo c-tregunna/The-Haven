@@ -3,6 +3,8 @@ const overlay = document.querySelector('.enter-overlay');
 const enterBtn = document.querySelector('.enter');
 const heading = document.querySelector('.show-list');
 const list = document.querySelector('.list');
+const contentSpan = document.querySelectorAll('.section_container span');
+const sectionContent = document.querySelector('.section_content');
 
 //------- Hide enter overlay ------\\
 enterBtn.addEventListener('click', () => {
@@ -13,17 +15,9 @@ enterBtn.addEventListener('click', () => {
     }, 900);
 });
 
+//------ Copywrite year -----\\
 let today = new Date();
 let year = today.getFullYear();
 let currentYear = document.querySelector('#date');
 currentYear.innerHTML = year;
 
-//------- Mobile navigation drop down ------\\
-// heading.addEventListener('click', () => {
-//     list.classList.toggle('hidden');
-// });
-
-// window.onscroll = () => {
-//     const nav = document.querySelector('#navbar');
-//     if(this.scrollY <= 10) nav.classList.remove('scroll'); else nav.classList.add('scroll');
-//   };
