@@ -50,6 +50,13 @@ footer {
     text-align: center;
   }
 }
+
+a,
+a:link,
+a:visited {
+  color: initial;
+  text-decoration: none;
+}
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
