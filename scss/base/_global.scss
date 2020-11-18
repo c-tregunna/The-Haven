@@ -36,6 +36,17 @@ main {
   }
 }
 
+.haven_main {
+  @include flex($dir: column, $just: center, $align: center);
+  & .gallery {
+    @include flex($dir: column, $just: center, $align: center);
+    @include medq($break-m) {
+      @include flex($dir: row);
+      flex-wrap: wrap;
+    }
+  }
+}
+
 section {
   position: relative;
   @include flex($just: center, $align: center);
