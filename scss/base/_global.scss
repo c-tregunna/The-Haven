@@ -38,6 +38,10 @@ main {
 
 .haven_main {
   @include flex($dir: column, $just: center, $align: center);
+  border-top: 1px solid $brand-green;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px;
   & .gallery {
     @include flex($dir: column, $just: center, $align: center);
     @include medq($break-m) {
@@ -47,9 +51,42 @@ main {
   }
 }
 
+.main_section_container {
+  padding: 20px;
+  @include medq($break-m) {
+    @include flex($dir: row, $just: space-around);
+  }
+}
+
 section {
   position: relative;
   @include flex($just: center, $align: center);
+}
+
+.services-section {
+  @include flex($dir: column, $just: flex-start);
+  background: $purple;
+  outline: 3px solid $brand-green;
+  outline-offset: 4px;
+  color: $white;
+  font-weight: 300;
+  width: 90%;
+  padding: 30px;
+  margin: 20px auto;
+  & p {
+    line-height: 20px;
+  }
+  @include medq($break-m) {
+    width: 40%;
+  }
+}
+
+ul.services {
+  width: 90%;
+  & li {
+    list-style-type: disc;
+    margin: 6px;
+  }
 }
 
 footer {
@@ -68,6 +105,12 @@ a:visited {
   color: initial;
   text-decoration: none;
 }
+
+// hr {
+//   border: 1px solid $brand-green;
+//   width: 100%;
+//   margin-bottom: 20px;
+// }
 /* ---- Float clearfix ---- */
 
 .clearfix::after {

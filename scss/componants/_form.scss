@@ -1,0 +1,61 @@
+form {
+  background: $purple;
+  color: $white;
+  width: 100%;
+  outline: 3px solid $brand-green;
+  outline-offset: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  @include medq($break-m) {
+    width: 60%;
+  }
+}
+
+fieldset {
+  border: none;
+  width: 98%;
+  margin: auto;
+}
+
+.form-flex {
+  @include flex($dir: column);
+  width: 100%;
+  margin: 20px 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  height: 2em;
+  transition: border 0.4s ease-in-out, background 0.4s ease-in-out;
+  margin: 4px 0px;
+}
+
+textarea {
+  height: 4em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: $brand-green;
+  background: lighten($background, 20%);
+}
+
+button[type="submit"] {
+  color: $purple;
+  height: 2em;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: none;
+  transition: color 0.4s ease-in, background 0.4s ease-in;
+  &:hover {
+    background: $brand-green;
+    color: $white;
+  }
+}

@@ -6,6 +6,14 @@ const list = document.querySelector('.list');
 const contentSpan = document.querySelectorAll('.section_container span');
 const sectionContent = document.querySelector('.section_content');
 
+//------ Gallery plugin code -----\\
+
+baguetteBox.run('.gallery', {
+    animation: 'fadeIn',
+    noScrollbars: true
+});
+
+
 //------- Hide enter overlay ------\\
 if(enterBtn) {
 enterBtn.addEventListener('click', e => {
@@ -23,11 +31,5 @@ let year = today.getFullYear();
 let currentYear = document.querySelector('#date');
 currentYear.innerHTML = year;
 
-//------ Gallery plugin code -----\\
-
-baguetteBox.run('.gallery', {
-    animation: 'fadeIn',
-    noScrollbars: true
-});
 
 
