@@ -15,7 +15,7 @@
 
     <nav class="main-nav">
         <ul class="tablet-nav" id="navbar">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="thehaven.html">The Haven</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -47,11 +47,17 @@
     </main>
     <footer>
         <p>&copy; <span id="date"></span> Lisa Swain and Claire Tregunna</p>
-        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/profile.php?id=1277983653" target="_blank"><i class="fab fa-facebook"></i></a>
     </footer>
 
 </div>
 <script src="js/baguetteBox.js"></script>
+<script>
+    baguetteBox.run('.gallery', {
+        animation: 'fadeIn',
+        noScrollbars: true
+    });
+</script>
 <script src="js/app.js"></script>
 </body>
 </html>
