@@ -675,8 +675,8 @@ h4 {
 .tablet-nav li:hover {
   background: #4d3f5c;
 }
-.tablet-nav li a:hover {
-  color: white;
+.tablet-nav li:hover a {
+  color: #fff;
 }
 
 .overlay-logo,

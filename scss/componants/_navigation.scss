@@ -38,10 +38,13 @@
     }
     &:hover {
       background: #4d3f5c;
+      & a {
+        color: $white;
+      }
     }
-    & a:hover {
-      color: white;
-    }
+    // &:hover a {
+    //   color: white;
+    // }
   }
 }
 
